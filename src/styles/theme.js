@@ -19,5 +19,8 @@ export const theme = {
             huge: '5.6rem',
             xhuge: '6.4rem'
         }
+    },
+    media: {
+        lteMedium: '(max-width: 768px)'
     }
 }
