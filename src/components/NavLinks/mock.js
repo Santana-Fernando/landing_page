@@ -20,11 +20,6 @@ export default [
         newTab: false
     },
     {
-        children: 'Link 4',
-        link: '#target4',
-        newTab: false
-    },
-    {
         children: 'Link 5',
         link: '#target5',
         newTab: false
