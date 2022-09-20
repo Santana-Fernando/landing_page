@@ -6,7 +6,7 @@ import * as Styled from './styles';
 
 export const GridContent = ({ title, html, background = false }) => {
     return (
-        <SectionBackground background={background}>
+        <SectionBackground background={background} as='h2'>
             <Styled.Container>
                 <Heading uppercase colorDark={!background}>
                     {title}

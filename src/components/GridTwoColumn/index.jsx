@@ -5,12 +5,11 @@ import { TextComponent } from '../TextComponent/index';
 import { Heading } from '../Heading/index';
 
 export const GridTwoColumn = ({ title, text, srcImg, background = false }) => {
-    console.log(title)
     return (
         <SectionBackground background={background}>
             <Styled.Container background={background}>
                 <Styled.TextContainer>                          
-                    <Heading uppercase colorDark={!background}>{title}</Heading>
+                    <Heading uppercase colorDark={!background} as="h2">{title}</Heading>
                     <TextComponent>{text}</TextComponent>
                 </Styled.TextContainer>
                 <Styled.ImageContainer>                          
