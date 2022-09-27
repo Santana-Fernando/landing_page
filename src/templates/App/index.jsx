@@ -1,14 +1,10 @@
 import { Heading } from "../../components/Heading";
+import { Base } from "../Base";
+import { mockBase } from "../Base/mock";
 import * as Styled from "./styles";
 
 function Home() {
-  return (
-    <div className="App">
-      <Heading background="green" as="h1">
-        ola
-      </Heading>
-    </div>
-  );
+  return <Base {...mockBase}/>;
 }
 
 export default Home;
