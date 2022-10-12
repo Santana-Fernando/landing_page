@@ -4,7 +4,7 @@ import { renderTheme } from "../../styles/renderTheme";
 
 describe("<Footer />", () => {
   it("should render", () => {
-    const { container } = renderTheme(<Footer html={"<h1>ola</h1>"} />);
+    const { container } = renderTheme(<Footer footerHtml={"<h1>ola</h1>"} />);
     expect(screen.getByRole("heading", { name: "ola" })).toBeInTheDocument();
     expect(container).toMatchInlineSnapshot(`
       .c4 {

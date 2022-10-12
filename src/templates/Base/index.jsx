@@ -4,13 +4,13 @@ import { Menu } from '../../components/Menu';
 import { Footer } from '../../components/Footer';
 import { GoTop } from '../../components/GoTop';
 
-export const Base = ({ links, LogoData, footerHtml, children }) => {
+export const Base = ({ children, links, logoData, footerHtml }) => {
     return (
         <>
-            <Menu links={links} logoData={LogoData} />        
+            <Menu links={links} logoData={logoData} />        
             <Styled.Container>
                 {children}
-                <Footer html={footerHtml}/>
+                <Footer footerHtml={footerHtml}/>
             </Styled.Container>
             <GoTop />
         </>
