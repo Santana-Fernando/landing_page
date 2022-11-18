@@ -1,12 +1,14 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: inherit;
-    align-items: center;
-    display: flex;
 
     > img {
-        max-height: 3rem;
+      height: 3rem;
     }
+  `}
 `;

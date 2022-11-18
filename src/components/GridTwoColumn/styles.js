@@ -10,6 +10,7 @@ export const Container = styled.div`
 
         @media ${theme.media.lteMedium} {
             grid-template-columns: 1fr;
+            text-align: center;
         }
 
         ${Title} {
@@ -22,7 +23,6 @@ export const TextContainer = styled.div`
     ${({theme}) => css`
         @media ${theme.media.lteMedium} {
             margin-bottom: ${theme.spacings.large};
-            text-align: center;
         }
     `}
 `;
@@ -32,5 +32,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-    ${({theme}) => css``}
+    ${({theme}) => css`
+        width: 100%;
+    `}
 `;

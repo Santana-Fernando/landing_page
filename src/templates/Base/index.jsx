@@ -7,10 +7,10 @@ import { GoTop } from '../../components/GoTop';
 export const Base = ({ children, links, logoData, footerHtml }) => {
     return (
         <>
-            <Menu links={links} logoData={logoData} />        
+            <Menu links={links} logoData={logoData} />
             <Styled.Container>
-                {children}
-                <Footer footerHtml={footerHtml}/>
+            {children}
+            <Footer footerHtml={footerHtml} />
             </Styled.Container>
             <GoTop />
         </>
